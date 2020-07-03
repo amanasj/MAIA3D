@@ -1,11 +1,13 @@
-#############################################################
-# MAIA Microperimetry volume code - creates a 3D hill of    # 
-# vision with an associated volumetric measure              #                 
-#                                                           #
-# If using the following code for research, please cite     #
-# our journal paper and please also cite the appropriate    #
-# packages contained within this code (ggplot2,rgl,fields). #        
-#############################################################
+###############################################################
+## MAIA Microperimetry volume code - creates a 3D hill of    ## 
+## vision with an associated volumetric measure              ##                
+##                                                           ##
+## This is an open access code which permits use provided    ##
+## the original author and source are credited.              ##
+##                                                           ##                            
+## please also cite the appropriate                          ##
+## packages contained within this code (ggplot2,rgl,fields). ##        
+###############################################################
 
 rm(list = ls(all = TRUE))
 library(ggplot2)
