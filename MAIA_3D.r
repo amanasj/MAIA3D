@@ -1,13 +1,22 @@
-###############################################################
-## MAIA Microperimetry volume code - creates a 3D hill of    ## 
-## vision with an associated volumetric measure              ##                
-##                                                           ##
-## This is an open access code which permits use provided    ##
-## the original author and source are credited.              ##
-##                                                           ##                            
-## please also cite the appropriate                          ##
-## packages contained within this code (ggplot2,rgl,fields). ##        
-###############################################################
+####################################################################
+## MAIA Microperimetry volume code - creates a 3D hill of         ## 
+## vision with an associated volumetric measure                   ##                
+##                                                                ##
+## Use of the following code in publications is permitted on      ## 
+## condition that a citation of the authors journal submission    ##
+## (pending publication) is provided:                             ##
+##                                                                ##
+## "Microperimetry hill of vision and volumetric measures of      ##
+## retinal sensitivity Amandeep Singh Josan, Thomas M W Buckley,  ##
+## Laura J Wood, Jasleen K Jolly, Jasmina Cehajic-Kapetanovic     ##
+## and Robert E MacLaren"                                         ##
+##                                                                ##                            
+## please also cite the appropriate                               ##
+## packages contained within this code (ggplot2,rgl,fields).      ##
+## This program is intended for research use only. Clinical       ##
+## decisions should not be made based on information generated    ##
+## using this program.                                            ##        
+####################################################################
 
 rm(list = ls(all = TRUE))
 library(ggplot2)
@@ -231,7 +240,7 @@ par3d(windowRect = c(0, 31, 769, 679))   # change scale of display window for 3D
 #### print volume calculated onto plot title separately
 bgplot3d({
   plot.new()
-title(main = paste("Volume =",volume_tps, "(dB-degrees^2)",
+title(main = paste("Vol =",volume_tps, "(dB-degrees^2)",
                    "\n MAIA MS =",MAIAmeanthresh,"dB"),
       line=-6, cex.main=1.9)
 })
