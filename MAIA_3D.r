@@ -166,9 +166,10 @@ print(pointmap)
 nx<-400                           
 ny<-400         ## can alter resolution
 
+df <- nrow(data1)
 ### main interpolation below
 tps_int <- fields::Tps(data.frame(data$x,data$y), 
-                      data$thresh, m=2, df=68)  ## state number of degrees of freedom (number of threshold tests points)
+                      data$thresh, m=2, df=df)  ## state number of degrees of freedom (number of threshold tests points)
                                                 ## GCV performed based on above parameters to provide optimal smoothness of fit
 tps <- predictSurface(tps_int, nx=nx, ny=ny)    ## predicts data forming 3D surface of HOV
 
