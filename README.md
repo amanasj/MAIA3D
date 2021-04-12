@@ -1,4 +1,4 @@
-########### MAIA_3D ###################
+########### MAIA3D ###################
 
 MAIA Microperimetry volume code in R - creates a 3D hill of vision with an associated volumetric measure
 
