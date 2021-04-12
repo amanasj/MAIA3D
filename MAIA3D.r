@@ -42,7 +42,7 @@ library(data.table)
 setwd("C:/insert path to folder with MAIA threshold.txt file here")
 
 #### read from MAIA thredshold.txt output file
-data0<- read.table("maia-xxxx_xxx_xxxx_threshold.txt", header =T, stringsAsFactors = F, skip=48)
+data0 <- read.table("maia-xxxx_xxx_xxxx_threshold.txt", header =T, stringsAsFactors = F, skip=48)
 #============================================================
 
 
@@ -64,9 +64,13 @@ data <- data[with(data, order((data$y), (data$x))), ]
 #############################################################
 ############# specify coordinates of interest ###############
 #############################################################
-coord <- coord_cartesian(xlim=c(-13, 13), ylim=c(-13, 13))
+xmin <- min(data$x)-2
+xmax <- max(data$x)+2
+ymin <- min(data$y)-2
+ymax <- max(data$y)+2
+coord <- coord_cartesian(xlim=c(xmin,xmax), ylim=c(ymin,ymax))
 #############################################################
-########### segemented analysis #############################
+########### optional segmented analysis #####################
 ### use eccentricity to specify regions
 #data <- mutate(data, eccen = sqrt((x^2)+(y^2)))
 #data <- data[data$eccen<90,]  # consider total field
@@ -166,9 +170,10 @@ print(pointmap)
 nx<-400                           
 ny<-400         ## can alter resolution
 
+df <- nrow(data1)
 ### main interpolation below
 tps_int <- fields::Tps(data.frame(data$x,data$y), 
-                      data$thresh, m=2, df=68)  ## state number of degrees of freedom (number of threshold tests points)
+                      data$thresh, m=2, df=df)  ## state number of degrees of freedom (number of threshold tests points)
                                                 ## GCV performed based on above parameters to provide optimal smoothness of fit
 tps <- predictSurface(tps_int, nx=nx, ny=ny)    ## predicts data forming 3D surface of HOV
 
@@ -224,7 +229,7 @@ col_tps <- palette[cut(tps$z, breaks = b)]
 
 ### use rgl package to generate 3D HOV
 plot_3D_tpsvol <-  rgl::persp3d(tps$x,tps$y,tps$z, color=col_tps,
-                      xlim = c(-10,10), ylim = c(-10,10), zlim = c(0,40),
+                      xlim = c(xmin,xmax), ylim = c(ymin,ymax), zlim = c(0,40),
                       xlab ="",ylab ="", zlab ="", axes=F, specular="gray60",  ## specular changes colour of sunshine on plot
                       sub="", main="", alpha = 1,
                       aspect = c(100, 100, 40))  # changes axis aspect ratios
