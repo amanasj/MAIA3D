@@ -4,7 +4,7 @@
 ##                                                                ##
 ## Use of the following code in publications is permitted on      ## 
 ## condition that a citation of the authors journal submission    ##
-## (pending publication) is provided:                             ##
+## (https://doi.org/10.1167/tvst.10.7.12) is provided:            ##
 ##                                                                ##
 ## "Microperimetry hill of vision and volumetric measures of      ##
 ## retinal sensitivity Amandeep Singh Josan, Thomas M W Buckley,  ##
