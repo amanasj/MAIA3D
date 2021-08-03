@@ -192,7 +192,7 @@ dftps$x <- tps$x[dftps$x]
 dftps$y <- tps$y[dftps$y]
 
 plot_tps <- ggplot(dftps, aes(x, y, z = thresh_ftps)) +
-  geom_tile(aes(fill = thresh_ftps)) +
+  geom_raster(aes(fill = thresh_ftps)) +
   scale_fill_manual(breaks=my_breaks, values=palette, 
                     labels=lab, drop=F, name="[dB]") +
   theme +
