@@ -3,7 +3,7 @@
 MAIA Microperimetry volume code in R - creates a 3D hill of vision with an associated volumetric measure
 
 Use of the following code in publications is permitted on condition that a citation of the authors journal 
-submission (pending publication) is provided:
+submission (https://doi.org/10.1167/tvst.10.7.12) is provided:
 
 "Microperimetry hill of vision and volumetric measures of retinal sensitivity" by
 Amandeep Singh Josan, Thomas M W Buckley,  Laura J Wood, Jasleen K Jolly, Jasmina Cehajic-Kapetanovic and Robert E MacLaren
