@@ -39,10 +39,17 @@ library(data.table)
 ##===========================================================
 ## Insert MAIA file location and filename below
 ##===========================================================
-setwd("C:/insert path to folder with MAIA threshold.txt file here")
+setwd("C:/insert path to folder containing MAIA threshold.txt file here")
+filepath <- "maia-xxxx_xxx_xxxx_threshold.txt"  ### write name of txt file within the brackets on the left here
+
+
+######  use this to find the string containing the headers for the dataframe of interest
+text <- readLines(filepath)
+rownumber <- grep("^ID\tx_deg\ty_deg", text)
+rownumber = rownumber-1
 
 #### read from MAIA thredshold.txt output file
-data0 <- read.table("maia-xxxx_xxx_xxxx_threshold.txt", header =T, stringsAsFactors = F, skip=48)
+data0 <- read.table(filepath, header =T, stringsAsFactors = F, skip=rownumber)
 #============================================================
 
 
