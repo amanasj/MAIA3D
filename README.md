@@ -1,4 +1,10 @@
-########### MAIA3D ###################
+################# MAIA3D ####################
+
+<br>
+
+03/06/2026 - v1.4 - NEW WINDOWS EXECUTABLE FILE WITH ALL NEW GUI FOR PROCESSING TGZ OR TXT FILES.  SEE RELEASES --------->
+
+<br><br>
 
 MAIA Microperimetry volume code in R - creates a 3D hill of vision with an associated volumetric measure
 
