@@ -2,7 +2,7 @@
 
 <br>
 
-03/06/2026  - V1.4 - NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE HOV ANALYSIS.  
+03/06/2026  - V1.4 - NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE HOV ANALYSIS.  Significant improvements in functionality.
 
 SEE RELEASES ------------------------------------->
 
