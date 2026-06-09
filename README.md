@@ -2,11 +2,17 @@
 
 <br>
 
-03/06/2026  - V1.4 - NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE HOV ANALYSIS.  Significant improvements in functionality.
+09/06/2026  - V1.5 - NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE HOV ANALYSIS.  Significant improvements in functionality.
 
 SEE RELEASES ------------------------------------->
 
 <br><br>
+
+
+<img width="1838" height="783" alt="MAIA3D_example" src="https://github.com/user-attachments/assets/1abde9a1-6b77-4331-bf0f-ef068148a290" />
+
+<br><br>
+
 
 MAIA Microperimetry volume code in R - creates a 3D hill of vision with an associated volumetric measure
 
