@@ -2,7 +2,7 @@
 
 <br>
 
-09/06/2026  - V1.5 - NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE HOV ANALYSIS.  Significant improvements in functionality.
+09/06/2026  - V1.5 -  NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE ANALYSIS.   Significant improvements in functionality.
 
 SEE RELEASES or click on link (https://github.com/amanasj/MAIA3D/releases) ------------------------------------->
 
