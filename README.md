@@ -2,7 +2,9 @@
 
 <br>
 
-13/10/2026  -V1.7  -  Added co-registration of other images (e.g. BAF) and other tweaks to make uploading of patient files easier
+14/10/2026  - V1.8  -  Bug fixes in coordinate transformation
+
+13/10/2026  - V1.7  -  Added co-registration of other images (e.g. BAF) and other tweaks to make uploading of patient files easier
 
 09/06/2026  - V1.5 -  NEW WINDOWS EXECUTABLE FILE FOR TGZ AND TXT FILE ANALYSIS.   Significant improvements in functionality.
 
