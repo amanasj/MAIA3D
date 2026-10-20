@@ -2,6 +2,8 @@
 
 <br>
 
+20/10/2026  - V1.9   - Fixed 0dB bug, added fixation points to overlay and renamed JSON files for easy identification
+
 14/10/2026  - V1.81  -  Bug fixes in coordinate transformation
 
 13/10/2026  - V1.7  -  Added co-registration of other images (e.g. BAF) and other tweaks to make uploading of patient files easier
