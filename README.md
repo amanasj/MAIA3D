@@ -2,6 +2,8 @@
 
 <br>
 
+21/10/2026  - V2.0   - Now works for 37 as well as 68 point grid patterns
+
 21/10/2026  - V1.91  - Fixed small loading bug
 
 20/10/2026  - V1.9   - Fixed 0dB bug, added fixation points to overlay and renamed JSON files for easy identification
